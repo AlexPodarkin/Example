@@ -32,7 +32,7 @@ void PrintArray(int[] col)
     int position = 0;
     while (position < count)
     {
-        Console.WriteLine(col[position]);
+        Console.Write($"  index {position} = {col[position]}");
         position++;
     }
 }
@@ -60,7 +60,7 @@ FillArray(array);
 PrintArray(array);
 Console.WriteLine();
 
-int pos = IndexOf(array, 2);
-Console.WriteLine(pos);
+int pos = IndexOf(array, 3);
+Console.WriteLine($"search index {pos}");
 
 
